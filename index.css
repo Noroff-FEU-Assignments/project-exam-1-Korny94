@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 1rem;
+  gap: 1rem;
+}
+
+nav * {
+  cursor: pointer;
+  transform: scale(0.8);
+}
+
+.logoImg {
+  transform: scale(0.4);
+  margin-left: -9rem;
+}
+
+.search {
+  transform: scale(0.6);
+  margin-right: -0.5rem;
+}
+
+.darkMode {
+  transform: scale(0.9);
+}
+
+.carousel {
+  width: 100vw;
+  height: 70vh;
+  background-color: blue;
+}
