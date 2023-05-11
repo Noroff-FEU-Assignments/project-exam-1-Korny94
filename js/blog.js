@@ -8,6 +8,8 @@ const queryString = document.location.search;
 
 const params = new URLSearchParams(queryString);
 
+const title = document.querySelector("title");
+
 const id = params.get("id");
 
 console.log(id);
@@ -26,8 +28,10 @@ async function fetchBlog() {
     loadingDiv.classList.remove("loading");
 
     blogTitle.innerHTML = json.title.rendered;
+    title.innerHTML = "UniFacts | " + json.title.rendered;
 
     createBlogHtml(json);
+    clickImg(json);
   } catch (err) {
     console.log(err);
     loadingDiv.classList.remove("loading");
@@ -42,4 +46,43 @@ function createBlogHtml(json) {
   blogDiv.innerHTML = `
         ${json.content.rendered}
 `;
+}
+
+function clickImg(json) {
+  //   const htmlString = json.content.rendered;
+  //   const parser = new DOMParser();
+  //   const domElement = parser.parseFromString(htmlString, "text/html");
+  //   console.log(domElement.getElementsByTagName("img"));
+  //   const imgTags = domElement.getElementsByTagName("img");
+  //   const images = json.content.rendered;
+  //   const tempDiv = document.createElement("div");
+  //   tempDiv.innerHTML = images;
+  //   const imgTags = tempDiv.getElementsByTagName("img");
+  //   for (let i = 0; i < imgTags.length; i++) {
+  //     imgTags[i].addEventListener("click", function () {
+  //       console.log("clicked");
+  //     });
+  //   }
+  const images = blogDiv.querySelectorAll("img");
+  images.forEach(function (img) {
+    imgCount = 0;
+    img.onclick = function () {
+      imgCount++;
+      if (imgCount % 2 == 1) {
+        body.innerHTML = `
+            <div class="imgPopupBG">
+            <div class="imgPopup" style="background-image: url(${img.src})"></div>
+          </div>
+          `;
+      }
+    };
+  });
+}
+
+function createImgPopup() {
+  blogDiv.innerHTML = `
+    <div class="imgPopupBG">
+    <div class="imgPopup" style="background-image: url(${img.src})"></div>
+  </div>
+  `;
 }

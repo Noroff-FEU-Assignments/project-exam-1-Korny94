@@ -21,6 +21,7 @@ main {
   padding: 0;
 }
 header {
+  z-index: 10;
   top: 0rem;
   width: 100vw;
   height: 20vh;
@@ -191,14 +192,25 @@ a {
 }
 
 figure {
+  z-index: 2;
   margin: 0;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 0px rgba(36, 103, 116, 0.511);
+  border-radius: 5px;
+  border: 10px solid rgb(241, 241, 241);
 }
 
 .blogDiv img {
-  width: 100%;
-  height: 10%;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px 0px rgba(36, 103, 116, 0.511);
+  object-fit: cover;
+  transform: scale(1.05);
+  max-width: 100%;
+  max-height: 300px;
+  transition-duration: 500ms;
+}
+
+.blogDiv img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .error {
@@ -210,4 +222,32 @@ figure {
   margin-left: 2rem;
   cursor: pointer;
   font-size: 1.2rem;
+}
+
+.marsImg {
+  width: 50%;
+}
+
+.imgPopupBG {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  background-color: rgba(74, 74, 74, 0.685);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgPopup {
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.8);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  border-radius: 20px;
 }
