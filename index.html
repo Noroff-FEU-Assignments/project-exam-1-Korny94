@@ -17,28 +17,31 @@
       <nav>
         <img
           class="search"
+          id="search"
           title="Search"
           src="/images/icons/search.png"
           alt="search"
         />
         <img
           class="random"
+          id="randomBlog"
           title="Random blog"
           src="/images/icons/random.png"
           alt="read a random blog"
         />
         <img
-          class="darkMode"
-          title="Dark/Light mode"
-          src="/images/icons/moon.png"
-          alt="dark mode"
-        />
-        <img
           class="menu"
+          id="menu"
+          title="Menu"
           src="/images/icons/menu.png"
           alt="menu"
-          onclick="toggleMenu()"
         />
+        <div class="dropMenu" id="dropMenu">
+          <a href="/index.html">Home</a>
+          <a href="/html/blogs.html">Blogs</a>
+          <a href="/html/about.html">About</a>
+          <a href="/html/contact.html">Contact</a>
+        </div>
       </nav>
     </header>
     <section class="carousel" id="carousel"></section>
