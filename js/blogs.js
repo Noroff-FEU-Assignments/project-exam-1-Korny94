@@ -2,6 +2,7 @@ const menuBlogs = document.querySelector("#menuBlogs");
 const blogsDiv1 = document.querySelector("#blogsDiv");
 const blogsH1 = document.querySelector("#blogsH1");
 
+let menuCount = 0;
 menuBlogs.onclick = function () {
   menuCount++;
   if (menuCount % 2 == 1) {

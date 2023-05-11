@@ -30,7 +30,7 @@ async function fetchBlog() {
     createBlogHtml(json);
   } catch (err) {
     console.log(err);
-    blogDiv.classList.remove("loading");
+    loadingDiv.classList.remove("loading");
     blogDiv.classList.add("error");
     blogDiv.innerHTML = "There was an error!";
   }
