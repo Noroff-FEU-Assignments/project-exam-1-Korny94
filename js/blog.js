@@ -64,25 +64,24 @@ function clickImg(json) {
   //     });
   //   }
   const images = blogDiv.querySelectorAll("img");
+  const imgPopupBG = document.querySelector("#imgPopupBG");
+  const imgPopup = document.querySelector("#imgPopup");
+
   images.forEach(function (img) {
-    imgCount = 0;
     img.onclick = function () {
-      imgCount++;
-      if (imgCount % 2 == 1) {
-        body.innerHTML = `
-            <div class="imgPopupBG">
-            <div class="imgPopup" style="background-image: url(${img.src})"></div>
-          </div>
-          `;
-      }
+      imgPopupBG.style.display = "flex";
+      imgPopup.style.backgroundImage = `url(${img.src})`;
     };
   });
+  imgPopupBG.onclick = function () {
+    imgPopupBG.style.display = "none";
+  };
 }
 
-function createImgPopup() {
-  blogDiv.innerHTML = `
-    <div class="imgPopupBG">
-    <div class="imgPopup" style="background-image: url(${img.src})"></div>
-  </div>
-  `;
-}
+// function createImgPopup() {
+//   blogDiv.innerHTML = `
+//     <div class="imgPopupBG">
+//     <div class="imgPopup" style="background-image: url(${img.src})"></div>
+//   </div>
+//   `;
+// }

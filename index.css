@@ -236,7 +236,7 @@ figure {
   height: 100vh;
   z-index: 99;
   background-color: rgba(74, 74, 74, 0.685);
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
