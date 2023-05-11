@@ -49,20 +49,6 @@ function createBlogHtml(json) {
 }
 
 function clickImg(json) {
-  //   const htmlString = json.content.rendered;
-  //   const parser = new DOMParser();
-  //   const domElement = parser.parseFromString(htmlString, "text/html");
-  //   console.log(domElement.getElementsByTagName("img"));
-  //   const imgTags = domElement.getElementsByTagName("img");
-  //   const images = json.content.rendered;
-  //   const tempDiv = document.createElement("div");
-  //   tempDiv.innerHTML = images;
-  //   const imgTags = tempDiv.getElementsByTagName("img");
-  //   for (let i = 0; i < imgTags.length; i++) {
-  //     imgTags[i].addEventListener("click", function () {
-  //       console.log("clicked");
-  //     });
-  //   }
   const images = blogDiv.querySelectorAll("img");
   const imgPopupBG = document.querySelector("#imgPopupBG");
   const imgPopup = document.querySelector("#imgPopup");
@@ -70,18 +56,10 @@ function clickImg(json) {
   images.forEach(function (img) {
     img.onclick = function () {
       imgPopupBG.style.display = "flex";
-      imgPopup.style.backgroundImage = `url(${img.src})`;
+      imgPopup.src = `${img.src})`;
     };
   });
   imgPopupBG.onclick = function () {
     imgPopupBG.style.display = "none";
   };
 }
-
-// function createImgPopup() {
-//   blogDiv.innerHTML = `
-//     <div class="imgPopupBG">
-//     <div class="imgPopup" style="background-image: url(${img.src})"></div>
-//   </div>
-//   `;
-// }
