@@ -43,6 +43,11 @@ nav * {
   transition-duration: 300ms;
 }
 
+footer {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 .search:hover,
 .darkMode:hover,
 .menu:hover,
@@ -97,10 +102,20 @@ nav * {
 }
 
 .dropMenu * {
-  text-align: center;
   font-size: 1.6rem;
-  padding: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 0.5rem;
   color: rgba(30, 30, 30, 0.727);
+}
+
+.dropMenu img {
+  width: 18%;
+  padding: 1rem;
+}
+
+.dropMenu a {
+  display: flex;
+  align-items: center;
 }
 
 .dropMenu *:hover {
@@ -152,6 +167,32 @@ a {
   height: fit-content;
 }
 
-.blogDiv {
+.blogDivs {
   margin-bottom: 2rem;
+}
+
+.blogTitle {
+  text-align: center;
+  font-size: clamp(25px, 2.5rem, 5vw);
+  margin-bottom: 3rem;
+}
+
+.blogDiv {
+  width: 50vw;
+  padding-right: 40vw;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+figure {
+  margin: 0;
+}
+
+.blogDiv img {
+  width: 100%;
+  height: 10%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(36, 103, 116, 0.511);
 }

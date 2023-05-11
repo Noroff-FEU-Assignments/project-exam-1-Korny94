@@ -13,7 +13,7 @@ async function fetchBlogs() {
     loading.classList.remove("loading");
     json.forEach(function (blogs) {
       blogsDiv.innerHTML += `
-                <a href="/blog.html?id=${blogs.id}" class="blogDiv">
+                <a href="/html/blog.html?id=${blogs.id}" class="blogDivs">
                     <h2>${blogs.title.rendered}</h2>
                     <div>${blogs.excerpt.rendered}</div>
                 <hr>

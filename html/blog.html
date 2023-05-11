@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/index.css" rel="stylesheet" />
     <script defer src="/index.js"></script>
+    <script defer src="/js/blog.js"></script>
+
     <link rel="icon" href="/images/logo/logoNoBg.png" />
     <title>Home | UniFacts</title>
   </head>
@@ -37,13 +39,24 @@
           alt="menu"
         />
         <div class="dropMenu" id="dropMenu">
-          <a href="/index.html">Home</a>
-          <a href="/html/blogs.html">Blogs</a>
-          <a href="/html/about.html">About</a>
-          <a href="/html/contact.html">Contact</a>
+          <a href="/index.html"><img src="/images/icons/home.png" />Home</a>
+          <a href="/html/blogs.html"
+            ><img src="/images/icons/blog.png" />Blogs</a
+          >
+          <a href="/html/about.html"
+            ><img src="/images/icons/about.png" />About</a
+          >
+          <a href="/html/contact.html"
+            ><img src="/images/icons/contact.png" />Contact</a
+          >
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <h1 class="blogTitle" id="blogTitle"></h1>
+      <div class="blogDiv" id="blogDiv"></div>
+      <div class="loading" id="loading"></div>
+    </main>
+    <footer>&copy Unifacts 2023</footer>
   </body>
 </html>
