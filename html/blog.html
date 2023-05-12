@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/index.css" rel="stylesheet" />
     <script defer src="/index.js"></script>
+    <script defer src="/js/fetchBlogs.js"></script>
     <script defer src="/js/blog.js"></script>
     <script defer src="/js/randomBlog.js"></script>
 
@@ -58,8 +59,16 @@
         <img class="imgPopup" id="imgPopup" />
       </div>
       <h1 class="blogTitle" id="blogTitle"></h1>
-      <div class="blogDiv" id="blogDiv"></div>
+      <div class="blogsRecent">
+        <div class="blogDiv" id="blogDiv"></div>
+
+        <div class="recentBlogs alsoLike" id="recentBlogs">
+          <h1>You May Also Like:</h1>
+        </div>
+      </div>
       <div class="loading" id="loading"></div>
+      <div class="noShow" id="viewMore"></div>
+      <div class="noShow" id="blogsDiv"></div>
     </main>
     <footer>&copy Unifacts 2023</footer>
   </body>
