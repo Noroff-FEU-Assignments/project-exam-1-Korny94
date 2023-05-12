@@ -1,6 +1,7 @@
 const blogsDiv = document.querySelector("#blogsDiv");
 const loading = document.querySelector("#loading");
 const viewMore = document.querySelector("#viewMore");
+const recentBlogs = document.querySelector("#recentBlogs");
 const api = "https://unifacts.local/wp-json/wp/v2/posts?per_page=";
 let per_page = "10";
 let viewMoreCount = 0;
@@ -13,15 +14,33 @@ async function fetchBlogs() {
     console.log(json);
 
     loading.classList.remove("loading");
+
+    // Sort the posts by date published (newest to oldest)
+    json.sort(function (a, b) {
+      const dateA = new Date(a.date);
+      const dateB = new Date(b.date);
+      return dateB - dateA;
+    });
+
+    // Render the sorted posts to the page
     json.forEach(function (blogs) {
       blogsDiv.innerHTML += `
-                  <a href="/html/blog.html?id=${blogs.id}" class="blogDivs">
-                      <h2>${blogs.title.rendered}</h2>
-                      <div>${blogs.excerpt.rendered}</div>
-                  <hr>
-                  </a>
-              `;
+                    <a href="/html/blog.html?id=${blogs.id}" class="blogDivs">
+                        <h2>${blogs.title.rendered}</h2>
+                        <div>${blogs.excerpt.rendered}</div>
+                    <hr>
+                    </a>
+                `;
     });
+
+    for (let i = 0; i < 5; i++) {
+      recentBlogs.innerHTML += `
+        <a href="/html/blog.html?id=${json[i].id}" class="blogDivs">
+            <h2>${json[i].title.rendered}</h2>
+        <hr>
+        </a>
+    `;
+    }
 
     if (scrollToBottom) {
       window.scrollTo({

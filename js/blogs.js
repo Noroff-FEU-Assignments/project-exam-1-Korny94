@@ -12,6 +12,6 @@ menuBlogs.onclick = function () {
   } else {
     // blogsH1.style.marginLeft = "0";
     dropMenu.style.display = "none";
-    blogsDiv1.style.width = "90vw";
+    blogsDiv1.style.width = "60vw";
   }
 };

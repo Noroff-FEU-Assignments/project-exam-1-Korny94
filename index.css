@@ -19,7 +19,7 @@ body {
 main {
   margin-top: 7.2rem;
   padding: 0;
-  min-height: 74.1vh;
+  min-height: 74vh;
 }
 header {
   z-index: 10;
@@ -109,7 +109,7 @@ footer {
 
 .dropMenu * {
   font-size: 1.6rem;
-  padding-left: 3rem;
+  padding-left: 2.5rem;
   padding-bottom: 0.5rem;
   color: rgba(30, 30, 30, 0.727);
 }
@@ -168,8 +168,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 9rem;
-  width: 90vw;
+  margin-top: 4rem;
+  width: 60vw;
   height: fit-content;
 }
 
@@ -251,3 +251,32 @@ figure {
   position: fixed;
   border-radius: 20px;
 }
+
+.blogsRecent {
+  display: flex;
+}
+
+.recentBlogs {
+  width: 25vw;
+  height: 80vh;
+  position: fixed;
+  right: -1rem;
+  margin-top: -1rem;
+  border-left: 1px solid gray;
+  z-index: 0;
+  padding: 0rem 2rem 1rem 2rem;
+  overflow-y: scroll;
+}
+
+.recentBlogs h2 {
+  font-size: 1rem;
+  margin-top: 2rem;
+  font-weight: 100;
+}
+
+.recentBlogs h1 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+/* mediaquery 600px */

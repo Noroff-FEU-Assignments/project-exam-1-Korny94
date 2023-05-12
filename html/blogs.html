@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/index.css" rel="stylesheet" />
     <script defer src="/js/fetchBlogs.js"></script>
+    <script defer src="/js/randomBlog.js"></script>
     <script defer src="/js/blogs.js"></script>
     <link rel="icon" href="/images/logo/logoNoBg.png" />
     <title>Home | UniFacts</title>
@@ -53,7 +54,12 @@
     </header>
     <main>
       <!-- <h1 class="blogsH1" id="blogsH1">Blogs</h1> -->
-      <div class="blogsDiv" id="blogsDiv"></div>
+      <div class="blogsRecent">
+        <div class="blogsDiv" id="blogsDiv"></div>
+        <div class="recentBlogs" id="recentBlogs">
+          <h1>Recent Posts</h1>
+        </div>
+      </div>
       <div class="loading" id="loading"></div>
       <h2 id="viewMore" class="viewMore">View more..</h2>
     </main>

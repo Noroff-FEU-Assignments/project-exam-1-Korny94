@@ -1,7 +1,6 @@
 const menu = document.querySelector("#menu");
 const dropMenu = document.querySelector("#dropMenu");
 const body = document.querySelector("body");
-
 let menuCount = 0;
 
 menu.onclick = function () {
