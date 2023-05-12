@@ -295,4 +295,44 @@ figure {
   color: rgba(0, 0, 255, 0.492);
 }
 
+.contactForm {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  align-items: center;
+}
+
+.message,
+.name,
+.subject,
+.email {
+  text-align: left;
+  width: 300px;
+  margin-bottom: 0.3rem;
+  padding: 0.5rem;
+}
+
+.message::placeholder,
+.name::placeholder,
+.subject::placeholder,
+.email::placeholder {
+  padding: 0.2rem;
+}
+
+.formError {
+  color: red;
+  margin-bottom: 1rem;
+  opacity: 0;
+}
+
+.formSubmit {
+  width: 200px;
+  padding: 0.3rem;
+  background-color: rgba(110, 182, 255, 0.091);
+  border: 1px solid rgba(16, 0, 89, 0.672);
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
 /* mediaquery 600px */

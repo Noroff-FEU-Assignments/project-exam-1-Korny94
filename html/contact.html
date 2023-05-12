@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/index.css" rel="stylesheet" />
     <script defer src="/index.js"></script>
+    <script defer src="/js/contactForm.js"></script>
+
     <script defer src="/js/randomBlog.js"></script>
     <link rel="icon" href="/images/logo/logoNoBg.png" />
     <title>Home | UniFacts</title>
@@ -51,7 +53,51 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <h1 class="aboutH1" id="aboutH1">Contact UniFacts</h1>
+      <form class="contactForm" id="contactForm">
+        <input
+          class="name"
+          name="name"
+          id="name"
+          placeholder="Full name (required)"
+        />
+        <div class="formError" id="nameError">
+          Please enter your full name (Min. 5 characters)
+        </div>
+        <input
+          class="email"
+          name="email"
+          id="email"
+          placeholder="Email (required)"
+        />
+        <div class="formError" id="emailError">
+          Please enter a valid email address
+        </div>
+        <input
+          class="subject"
+          name="subject"
+          id="subject"
+          placeholder="Subject (required)"
+        />
+        <div class="formError" id="subjectError">
+          Subject must be over 15 characters
+        </div>
+        <textarea
+          rows="5"
+          class="message"
+          type="text"
+          name="message"
+          id="message"
+          placeholder="Message (required)"
+        ></textarea>
+        <div class="formError" id="messageError">
+          Message must be over 25 characters
+        </div>
+
+        <button class="formSubmit" id="formSubmit">Submit</button>
+      </form>
+    </main>
     <footer>&copy Unifacts 2023</footer>
   </body>
 </html>
