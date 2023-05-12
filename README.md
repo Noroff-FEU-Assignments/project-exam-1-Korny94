@@ -18,11 +18,11 @@ You have been tasked with creating a blog site. You can choose the design and to
 
 The home page should have a ‘Latest Posts’ section which uses a carousel (slider) for users to click to view more posts. For example, by default the user can see four posts, then they can click an arrow on the right to view the next four posts, and click it again to view the next four posts. The user can also click back to view results they had previously seen. This must be implemented for desktop at least, but if you want a simpler layout for mobile, you can change it from being in a carousel.
 
-### Blog Page DONE!
+### Blog Page DONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 The blog posts page should show the first 10 blogs, and the user should click to view more results which then show underneath the first 10 blogs.
 
-### Blog Specific Page
+### Blog Specific Page DONE!!!!!!!!!!!!!!!!!!!!!!!
 
 The content of the blog specific page should be dynamically built using a query string parameter based on whatever link the user clicked. The title of the blog specific page should change based on the blog that has been clicked on e.g. “My Blog | An Article I Wrote”.
 

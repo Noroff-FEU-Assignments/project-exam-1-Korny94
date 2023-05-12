@@ -279,4 +279,20 @@ figure {
   margin-top: 2.5rem;
 }
 
+.aboutH1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.aboutUs {
+  width: 60vw;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.contactUs {
+  text-decoration: underline;
+  color: rgba(0, 0, 255, 0.492);
+}
+
 /* mediaquery 600px */
