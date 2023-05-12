@@ -8,11 +8,11 @@ To put into practice the skills learned over your first year of studies.
 
 You have been tasked with creating a blog site. You can choose the design and topics covered on the blog, but it should have at least the following pages:
 
-- Home page
-- About page
-- List of blog posts
-- Blog post specific pages
-- Contact page.
+- Home page ----------------IN PROGRESS???????????
+- About page ---------------DONE!!!!!!!!!!!!!!!!!!
+- List of blog posts -------DONE!!!!!!!!!!!!!!!!!!
+- Blog post specific pages -DONE!!!!!!!!!!!!!!!!!!
+- Contact page. ------------DONE!!!!!!!!!!!!!!!!!!
 
 ### Home Page
 
@@ -28,7 +28,7 @@ The content of the blog specific page should be dynamically built using a query 
 
 If images on the blog post page are clicked, a modal should appear giving the user a bigger view of that image. Clicking outside the image should hide the modal.
 
-### Contact page
+### Contact page DONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 Create a contact us page, there should be 4 textboxes on this page.
 
@@ -39,7 +39,7 @@ Create a contact us page, there should be 4 textboxes on this page.
 
 Please use JavaScript for validation, show error messages if the values in the textboxes do not meet the requirements.
 
-### WordPress
+### WordPress DONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 The content for your website will be stored on a WordPress installation used as a Headless CMS. It’s important to note that we are only using WordPress to provide an API and add content for the blog. You should not submit a link to a WordPress site, but build your website using HTML, CSS and JavaScript and making a call to the WordPress REST API to fetch the data.
 
