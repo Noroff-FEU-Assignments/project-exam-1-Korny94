@@ -150,9 +150,7 @@ submit.onclick = function (event) {
     validSubject();
     validEmail();
     validFullName();
-    aboutH1.innerHTML = "Thank you for your message!";
-    form.style.fontSize = "1.3rem";
-    form.innerHTML = "We will get back to you as soon as possible!";
+    location.href = "thank.html";
   } else if (message.value.length > 25) {
     validMessage();
   } else {

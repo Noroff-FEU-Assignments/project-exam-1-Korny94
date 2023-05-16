@@ -83,13 +83,6 @@ footer {
   z-index: 2;
 }
 
-.carousel {
-  margin-top: 7.2rem;
-  width: 100vw;
-  height: 70vh;
-  background-color: blue;
-}
-
 .dropMenu {
   display: none;
   flex-direction: column;
@@ -157,6 +150,100 @@ a {
   }
 }
 
+.carousel {
+  margin-top: 7.2rem;
+  width: 100vw;
+  height: 70vh;
+  background-color: rgb(84, 84, 84);
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.h1Index {
+  top: 4.5rem;
+  position: absolute;
+  padding: 2rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.h2Index {
+  left: 1rem;
+  padding: 1rem;
+  color: white;
+  position: absolute;
+  top: 6rem;
+}
+
+.arrowLeft {
+  position: absolute;
+  transition-duration: 300ms;
+  cursor: pointer;
+  filter: invert(100%);
+  left: 1rem;
+  top: 16rem;
+  transform: scale(0.7);
+}
+.arrowRight {
+  transform: scale(0.7);
+  position: absolute;
+  right: 1rem;
+  transition-duration: 300ms;
+  cursor: pointer;
+  filter: invert(100%);
+  top: 16rem;
+}
+
+.arrowLeft:hover,
+.arrowRight:hover {
+  transform: scale(0.8);
+}
+
+.latestDivs {
+  display: flex;
+  gap: 3rem;
+  overflow-x: scroll;
+  border: 1px solid red;
+  width: 500px;
+}
+
+.latestDivs::-webkit-scrollbar {
+  display: none;
+}
+
+.latestCard {
+  border: 1px solid rgb(255, 255, 255);
+  background-color: white;
+  width: 200px;
+  height: 230px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.631);
+  margin: auto;
+  transition-duration: 300ms;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 6.5rem;
+}
+
+.latestCard:hover {
+  transform: scale(1.05);
+}
+
+.latestImg {
+  max-height: 75%;
+  object-fit: cover;
+}
+
+.latestTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
 .blogsH1 {
   text-align: center;
   font-size: 3rem;
@@ -186,7 +273,7 @@ a {
 .blogDiv {
   width: 60vw;
   margin: auto;
-  margin-right: 300px;
+  margin-right: 320px;
   margin-left: 8vw;
   display: flex;
   flex-direction: column;
@@ -342,15 +429,53 @@ figure {
 
 .alsoLike {
   border: 1.5px solid gray;
-  height: 65vh;
-  width: 250px;
+  height: 70vh;
+  top: 11rem;
+  width: 270px;
+  padding-right: 0.7rem;
+  padding-left: 0.7;
+  margin-right: 0.7rem;
   scale: 0.9;
-  overflow: hidden;
-  margin-right: 0.2rem;
+  overflow-y: scroll;
+  border-radius: 10px;
 }
 
 .alsoLike h1 {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+}
+
+.alsoLike::-webkit-scrollbar {
+  width: 12px;
+  height: 8px;
+}
+
+.alsoLike::-webkit-scrollbar-thumb {
+  background-color: #94949c6e;
+  border-radius: 4px;
+}
+
+.alsoLike::-webkit-scrollbar-track-piece:hover {
+  border: 1px solid black;
+}
+
+.thankDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.mainThank {
+  margin-top: 10rem;
+}
+
+.aContact {
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+  display: inline;
+  white-space: nowrap;
 }
 
 /* mediaquery 600px */
