@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "roboto";
+  src: url(/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+html {
+  font-family: "roboto";
+  overflow-x: hidden;
+}
+
 html::-webkit-scrollbar {
   width: 12px;
   height: 8px;
@@ -19,7 +29,7 @@ body {
 main {
   margin-top: 7.2rem;
   padding: 0;
-  min-height: 74vh;
+  min-height: 73vh;
 }
 header {
   z-index: 10;
@@ -168,9 +178,10 @@ a {
 .h1Index {
   top: 4.5rem;
   position: absolute;
-  padding: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 0;
   color: white;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .h2Index {
