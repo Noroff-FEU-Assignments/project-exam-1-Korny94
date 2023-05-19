@@ -237,7 +237,7 @@ a {
   border: 1px solid rgb(255, 255, 255);
   background-color: white;
   height: 250px;
-  max-width: 200px;
+  width: 200px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -255,6 +255,7 @@ a {
 .latestImg {
   object-fit: cover;
   height: 180px;
+  width: 200px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -292,7 +293,7 @@ a {
 .blogTitle {
   text-align: center;
   font-size: clamp(25px, 2.5rem, 5vw);
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .blogDiv {
@@ -303,6 +304,15 @@ a {
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;
+}
+
+.blogDiv p {
+  margin-top: 0.5rem;
+}
+
+.blogDiv figure {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 figure {
@@ -503,4 +513,26 @@ figure {
   white-space: nowrap;
 }
 
-/* mediaquery 600px */
+.blogsImgs {
+  border-radius: 5px;
+  width: 60vw;
+  height: 300px;
+  object-fit: cover;
+  transition-duration: 500ms;
+  transform: scale(1.03);
+}
+
+.blogsImgs:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.blogsImgsContainer {
+  overflow: hidden;
+  border: 10px solid rgb(241, 241, 241);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(36, 103, 116, 0.511);
+  margin-bottom: 2rem;
+}
+
+/* mediaquery 699px */

@@ -15,19 +15,17 @@ async function fetchBlogs() {
 
     loading.classList.remove("loading");
 
-    // Sort the posts by date published (newest to oldest)
     json.sort(function (a, b) {
       const dateA = new Date(a.date);
       const dateB = new Date(b.date);
       return dateB - dateA;
     });
 
-    // Render the sorted posts to the page
     json.forEach(function (blogs) {
       blogsDiv.innerHTML += `
                     <a href="/html/blog.html?id=${blogs.id}" class="blogDivs">
                         <h2>${blogs.title.rendered}</h2>
-                        <div>${blogs.excerpt.rendered}</div>
+                        <div class="blogsImgsContainer"><img class="blogsImgs" src="${blogs.featured_media_src_url}"/></div>
                     <hr>
                     </a>
                 `;
