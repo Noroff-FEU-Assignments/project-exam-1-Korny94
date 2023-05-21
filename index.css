@@ -540,4 +540,27 @@ figure {
   margin-bottom: 2rem;
 }
 
-/* mediaquery 699px */
+@media (max-width: 699px) {
+  .blogDiv {
+    width: 80vw;
+    margin: auto;
+  }
+
+  .recentBlogs {
+    display: none;
+  }
+
+  .blogsDiv {
+    padding-left: 0rem;
+    margin: auto;
+    width: 80vw;
+  }
+
+  .blogsImgs {
+    width: 80vw;
+  }
+
+  .aboutUs {
+    width: 80vw;
+  }
+}
