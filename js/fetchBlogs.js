@@ -26,6 +26,7 @@ async function fetchBlogs() {
                     <a href="/html/blog.html?id=${blogs.id}" class="blogDivs">
                         <h2>${blogs.title.rendered}</h2>
                         <div class="blogsImgsContainer"><img class="blogsImgs" src="${blogs.featured_media_src_url}"/></div>
+                        
                     <hr>
                     </a>
                 `;

@@ -308,6 +308,11 @@ a {
 
 .blogDiv p {
   margin-top: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.blogDiv strong {
+  font-size: 1.5rem;
 }
 
 .blogDiv figure {
@@ -464,7 +469,7 @@ figure {
 
 .alsoLike {
   border: 1.5px solid gray;
-  height: 70vh;
+  height: 400px;
   top: 11rem;
   width: 270px;
   padding-right: 0.7rem;
