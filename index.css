@@ -35,7 +35,7 @@ header {
   z-index: 10;
   top: 0rem;
   width: 100vw;
-  height: 20vh;
+  height: 115px;
   display: flex;
   align-items: center;
   position: fixed;
