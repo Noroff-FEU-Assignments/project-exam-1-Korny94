@@ -592,4 +592,17 @@ figure {
   .viewMore {
     margin-top: -1rem;
   }
+
+  .h1Index {
+    margin-top: 5rem;
+  }
+
+  .arrowLeft,
+  .arrowRight {
+    display: none;
+  }
+
+  .latestDivs {
+    margin-top: 5.5rem;
+  }
 }
