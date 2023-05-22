@@ -3,11 +3,11 @@ const arrowLeft = document.querySelector("#arrowLeft");
 const arrowRight = document.querySelector("#arrowRight");
 
 arrowLeft.onclick = function () {
-  latestDivs.scrollLeft -= 400;
+  latestDivs.scrollLeft -= 250;
 };
 
 arrowRight.onclick = function () {
-  latestDivs.scrollLeft += 400;
+  latestDivs.scrollLeft += 250;
 };
 
 const blogsDiv = document.querySelector("#blogsDiv");
