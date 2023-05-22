@@ -541,9 +541,34 @@ figure {
 }
 
 @media (max-width: 699px) {
+  body {
+    background-color: red;
+  }
+
+  header {
+    height: 100px;
+  }
+
+  footer {
+    margin-top: 1rem;
+  }
+
+  .carousel {
+    margin-top: -1rem;
+    height: 78vh;
+  }
+
+  .logoImg {
+    margin-left: -3rem;
+  }
+
   .blogDiv {
     width: 80vw;
     margin: auto;
+  }
+
+  .blogTitle {
+    margin: 8rem 1.5rem 0rem 1.5rem;
   }
 
   .recentBlogs {
@@ -562,5 +587,9 @@ figure {
 
   .aboutUs {
     width: 80vw;
+  }
+
+  .viewMore {
+    margin-top: -1rem;
   }
 }
