@@ -36,11 +36,11 @@ header {
   z-index: 10;
   top: 0rem;
   width: 100vw;
-  height: 115px;
+  height: 80px;
   display: flex;
   align-items: center;
   position: fixed;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
 }
 
 nav {
@@ -61,8 +61,8 @@ footer {
   left: 0;
   text-align: center;
   bottom: 1rem;
+  padding-top: 1rem;
   margin-top: auto;
-  margin-bottom: 1rem;
 }
 
 .search:hover,
@@ -166,9 +166,9 @@ a {
 }
 
 .carousel {
-  margin-top: 7.2rem;
+  margin-top: -2.2rem;
   width: 100vw;
-  height: 70vh;
+  height: 75vh;
   background-color: rgb(105, 119, 133);
   display: flex;
   align-items: center;
@@ -191,7 +191,7 @@ a {
   padding: 1rem;
   color: white;
   position: absolute;
-  top: 6rem;
+  top: 3.5rem;
 }
 
 .carouselDivs {
@@ -547,30 +547,26 @@ figure {
 
 @media (max-width: 699px) {
   body {
-    background-color: red;
-  }
-  header {
-    height: 100px;
-  }
-
-  footer {
-    margin-top: 1rem;
   }
 
   .h1Index {
-    margin-top: -2.5rem;
-    margin-bottom: 2.5rem;
+    margin-top: 0rem;
+    margin-bottom: 1.5rem;
   }
 
   .h2Index {
-    margin-top: 0rem;
+    margin-top: 1rem;
     margin-left: -1rem;
     font-size: 1.1rem;
   }
 
   .carousel {
-    margin-top: -1rem;
-    height: 78vh;
+    margin-top: -2.2rem;
+    height: 80vh;
+  }
+
+  .latestCard {
+    height: 175px;
   }
 
   .blogDiv {
@@ -604,14 +600,10 @@ figure {
     margin-top: -1rem;
   }
 
-  .latestDivs {
-    width: 70vw;
-  }
-
   .arrowLeft,
   .arrowRight {
     scale: 0.8;
-    margin-top: 18.5rem;
+    margin-top: 12.5rem;
     position: absolute;
   }
 
@@ -621,6 +613,10 @@ figure {
 }
 
 @media (orientation: landscape) and (min-width: 699px) and (max-width: 899px) {
+  .carousel {
+    margin-top: -2.2rem;
+  }
+
   .carouselDivs {
     margin-top: -0.7rem;
   }
@@ -642,11 +638,10 @@ figure {
   .h1Index {
     margin-top: 1rem;
     margin-bottom: 2vh;
-    font-size: 1.5rem;
   }
 
   .latestCard {
-    height: 150px;
+    height: 175px;
   }
 
   .latestImg {
