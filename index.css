@@ -545,10 +545,6 @@ figure {
 }
 
 @media (max-width: 999px) {
-  body {
-    background-color: rgb(225, 255, 74);
-  }
-
   header {
     height: 100px;
   }
@@ -558,8 +554,8 @@ figure {
   }
 
   .h1Index {
-    margin-top: 0rem;
-    margin-bottom: 1rem;
+    margin-top: -3rem;
+    margin-bottom: 3rem;
   }
 
   .h2Index {
@@ -607,7 +603,7 @@ figure {
   .arrowLeft,
   .arrowRight {
     scale: 0.8;
-    margin-top: 17rem;
+    margin-top: 20rem;
     position: absolute;
   }
 
