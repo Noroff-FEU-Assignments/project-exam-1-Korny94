@@ -545,7 +545,7 @@ figure {
   margin-bottom: 2rem;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 699px) {
   body {
     background-color: red;
   }
@@ -611,8 +611,8 @@ figure {
   .arrowLeft,
   .arrowRight {
     scale: 0.8;
-    /* margin-top: 18.5rem;
-    position: absolute; */
+    margin-top: 18.5rem;
+    position: absolute;
   }
 
   .arrowRight {
@@ -620,7 +620,7 @@ figure {
   }
 }
 
-@media (max-width: 699px) {
+@media (orientation: landscape) and (min-width: 599px) and (max-width: 899px) {
   .carouselDivs {
     margin-top: -0.7rem;
   }
