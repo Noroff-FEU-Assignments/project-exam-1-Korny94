@@ -565,10 +565,6 @@ figure {
     font-size: 1.1rem;
   }
 
-  .latestCard {
-    height: 210px;
-  }
-
   .blogDiv {
     width: 80vw;
     margin: auto;
@@ -603,7 +599,7 @@ figure {
   .arrowLeft,
   .arrowRight {
     scale: 0.8;
-    margin-top: 15.5rem;
+    margin-top: 17rem;
     position: absolute;
   }
 
