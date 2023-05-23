@@ -655,10 +655,6 @@ figure {
 }
 
 @media (max-width: 499px) {
-  header {
-    background-color: orange;
-  }
-
   .h1Index {
     margin-top: -5rem;
     margin-bottom: 2rem;
