@@ -615,7 +615,6 @@ figure {
 
 @media (orientation: landscape) {
   body {
-    background-color: rgb(0, 255, 102);
   }
 
   .carouselDivs {
@@ -638,12 +637,12 @@ figure {
 
   .h1Index {
     margin-top: 1rem;
-    margin-bottom: 0rem;
+    margin-bottom: 2vh;
     font-size: 1.5rem;
   }
 
   .latestCard {
-    height: 200px;
+    height: 180px;
   }
 
   .latestImg {
