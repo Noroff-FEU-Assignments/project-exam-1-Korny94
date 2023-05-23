@@ -659,4 +659,12 @@ figure {
     margin-top: 0rem;
     position: relative;
   }
+
+  .arrowLeft {
+    left: 1rem;
+  }
+
+  .arrowRight {
+    right: 1.5rem;
+  }
 }
