@@ -4,12 +4,12 @@ const viewMore = document.querySelector("#viewMore");
 const recentBlogs = document.querySelector("#recentBlogs");
 const api =
   "https://karlmagnusnokling.no/unifacts/wp-json/wp/v2/posts?per_page=";
-let per_page = "10&_embed";
+let per_page = "10";
 let viewMoreCount = 0;
 
 async function fetchBlogs() {
   try {
-    const response = await fetch(api + per_page);
+    const response = await fetch(api + per_page + "&_embed");
     const json = await response.json();
 
     console.log(json);
