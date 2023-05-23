@@ -541,7 +541,7 @@ figure {
   margin-bottom: 2rem;
 }
 
-@media (max-width: 699px) {
+@media (max-width: 999px) {
   body {
     background-color: rgb(225, 255, 74);
   }
