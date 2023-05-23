@@ -2,7 +2,7 @@ const blogsDiv = document.querySelector("#blogsDiv");
 const loading = document.querySelector("#loading");
 const viewMore = document.querySelector("#viewMore");
 const recentBlogs = document.querySelector("#recentBlogs");
-const api = "https://unifacts.local/wp-json/wp/v2/posts?per_page=";
+const api = "https://karlmagnusnokling.no/wp-json/wp/v2/posts?per_page=";
 let per_page = "10";
 let viewMoreCount = 0;
 
@@ -52,7 +52,7 @@ async function fetchBlogs() {
     loading.classList.remove("loading");
     blogsDiv.classList.add("error");
     blogsDiv.innerHTML = "There was an error!";
-    console.log(err);
+    console.dir(err);
   }
 }
 
