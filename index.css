@@ -550,7 +550,7 @@ figure {
     background-color: yellow;
   }
   .h1Index {
-    margin-top: 0rem;
+    margin-top: -2rem;
     margin-bottom: 1.5rem;
   }
 
@@ -561,7 +561,7 @@ figure {
   }
 
   .latestCard {
-    height: 175px;
+    height: 210px;
   }
 
   .blogDiv {
@@ -598,7 +598,7 @@ figure {
   .arrowLeft,
   .arrowRight {
     scale: 0.8;
-    margin-top: 12.5rem;
+    margin-top: 15.5rem;
     position: absolute;
   }
 
