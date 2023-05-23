@@ -554,8 +554,8 @@ figure {
   }
 
   .h1Index {
-    margin-top: -3rem;
-    margin-bottom: 3rem;
+    margin-top: -2.5rem;
+    margin-bottom: 2.5rem;
   }
 
   .h2Index {
@@ -603,7 +603,7 @@ figure {
   .arrowLeft,
   .arrowRight {
     scale: 0.8;
-    margin-top: 20rem;
+    margin-top: 18.5rem;
     position: absolute;
   }
 
