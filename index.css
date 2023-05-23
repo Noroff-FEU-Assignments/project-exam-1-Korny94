@@ -649,6 +649,11 @@ figure {
     margin-top: 1rem;
   }
 
+  .blogDiv {
+    width: 80vw;
+    margin: auto;
+  }
+
   .blogsDiv {
     margin: auto;
     width: 60vw;
