@@ -33,6 +33,7 @@ main {
   padding: 0;
 }
 header {
+  padding-top: 0.3rem;
   z-index: 10;
   top: 0rem;
   width: 100vw;
@@ -548,6 +549,10 @@ figure {
 @media (max-width: 699px) {
   body {
     background-color: yellow;
+  }
+
+  header {
+    background-color: red;
   }
   .h1Index {
     margin-top: -2rem;
