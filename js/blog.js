@@ -14,7 +14,7 @@ const id = params.get("id");
 
 console.log(id);
 
-const urlKeyId = "https://karlmagnusnokling.no/wp-json/wp/v2/posts/" + id;
+const urlKeyId = "https://unifacts.local/wp-json/wp/v2/posts/" + id;
 
 console.log(urlKeyId);
 

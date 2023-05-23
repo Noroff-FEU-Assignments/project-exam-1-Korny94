@@ -72,13 +72,13 @@ footer {
 }
 
 .logoImg {
-  scale: 0.5;
-  margin-left: -2rem;
+  width: 150px;
+  margin-left: 1rem;
   transition-duration: 300ms;
 }
 
 .logoImg:hover {
-  scale: 0.53;
+  scale: 1.05;
 }
 
 .search {
@@ -542,7 +542,7 @@ figure {
 
 @media (max-width: 699px) {
   body {
-    background-color: red;
+    background-color: rgb(136, 255, 0);
   }
 
   header {
@@ -567,10 +567,6 @@ figure {
   .carousel {
     margin-top: -1rem;
     height: 78vh;
-  }
-
-  .logoImg {
-    margin-left: -3rem;
   }
 
   .blogDiv {
