@@ -622,8 +622,8 @@ figure {
   }
 
   .dropMenu {
-    padding-top: 6.5rem;
-    gap: 0.5rem;
+    padding-top: 6rem;
+    gap: 0rem;
   }
 
   .dropMenu * {
@@ -642,7 +642,7 @@ figure {
   }
 
   .latestCard {
-    height: 180px;
+    height: 150px;
   }
 
   .latestImg {
@@ -651,6 +651,7 @@ figure {
 
   .latestTitle {
     font-size: 1.3rem;
+    margin: 0.8rem 0rem 0.8rem 0rem;
   }
 
   .arrowLeft,
