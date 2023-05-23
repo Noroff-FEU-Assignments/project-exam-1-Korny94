@@ -603,6 +603,10 @@ figure {
 }
 
 @media (min-width: 699px) and (max-width: 899px) {
+  header {
+    position: relative;
+  }
+
   .dropMenu {
     padding-top: 6rem;
     gap: 0rem;
