@@ -31,6 +31,7 @@ body {
 }
 main {
   padding: 0;
+  min-height: 100vh;
 }
 header {
   padding-top: 0.3rem;
@@ -58,7 +59,6 @@ nav * {
 }
 
 footer {
-  background-color: red;
   height: 35px;
   right: 0;
   left: 0;
@@ -286,7 +286,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 2rem;
   width: 60vw;
   height: fit-content;
 }
@@ -298,7 +297,7 @@ a {
 .blogTitle {
   text-align: center;
   font-size: clamp(25px, 2.5rem, 5vw);
-  margin-bottom: 1rem;
+  margin: 8rem 1.5rem 1rem 1.5rem;
 }
 
 .blogDiv {
@@ -391,6 +390,10 @@ figure {
   display: flex;
 }
 
+.blogsDivs {
+  margin-top: 8rem;
+}
+
 .recentBlogs {
   width: 25vw;
   height: 80vh;
@@ -415,6 +418,7 @@ figure {
 }
 
 .aboutH1 {
+  margin-top: 8rem;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -548,13 +552,6 @@ figure {
 }
 
 @media (max-width: 699px) {
-  body {
-    background-color: yellow;
-  }
-
-  header {
-    background-color: red;
-  }
   .h1Index {
     margin-top: 0rem;
     margin-bottom: 0rem;
@@ -569,10 +566,6 @@ figure {
   .blogDiv {
     width: 80vw;
     margin: auto;
-  }
-
-  .blogTitle {
-    margin: 8rem 1.5rem 0rem 1.5rem;
   }
 
   .recentBlogs {
@@ -610,11 +603,6 @@ figure {
 }
 
 @media (min-width: 699px) and (max-width: 899px) {
-  header {
-    position: relative;
-    background-color: rgb(60, 0, 255);
-  }
-
   .dropMenu {
     padding-top: 6rem;
     gap: 0rem;
@@ -646,6 +634,23 @@ figure {
 
   .arrowRight {
     right: 1.5rem;
+  }
+
+  .blogTitle {
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+  }
+
+  .blogsRecent {
+    margin-top: 1rem;
+  }
+
+  .blogsDivs {
+    margin-top: 3rem;
+  }
+
+  .aboutH1 {
+    margin-top: 3rem;
   }
 }
 
