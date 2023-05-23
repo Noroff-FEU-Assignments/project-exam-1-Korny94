@@ -1,5 +1,6 @@
 const randomBlog = document.querySelector("#randomBlog");
-const api1 = "https://unifacts.local/wp-json/wp/v2/posts?per_page=12";
+const api1 =
+  "https://karlmagnusnokling.no/unifacts/wp-json/wp/v2/posts?per_page=12&_embed";
 
 async function randomBlogs() {
   try {

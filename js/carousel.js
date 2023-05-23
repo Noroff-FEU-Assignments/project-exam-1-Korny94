@@ -12,21 +12,22 @@ arrowRight.onclick = function () {
 
 const blogsDiv = document.querySelector("#blogsDiv");
 const loading = document.querySelector("#loading");
-const api = "https://unifacts.local/wp-json/wp/v2/posts?per_page=100";
+const api =
+  "https://karlmagnusnokling.no/unifacts/wp-json/wp/v2/posts?per_page=100&_embed";
 
 async function fetchBlogs() {
   try {
     const response = await fetch(api);
     const json = await response.json();
 
-    console.log(json);
+    console.dir(json);
 
     loading.classList.remove("loading");
 
     json.forEach(function (carousel) {
       latestDivs.innerHTML += `
             <a href="/html/blog.html?id=${carousel.id}" class="latestCard">
-                <img class="latestImg" src="${carousel.featured_media_src_url}"/>
+                <img class="latestImg" src="${carousel._embedded["wp:featuredmedia"][0].source_url}"/>
                 <h3 class="latestTitle">${carousel.excerpt.rendered}</h3>
             </a>
         `;

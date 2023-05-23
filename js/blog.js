@@ -14,7 +14,8 @@ const id = params.get("id");
 
 console.log(id);
 
-const urlKeyId = "https://unifacts.local/wp-json/wp/v2/posts/" + id;
+const urlKeyId =
+  "https://karlmagnusnokling.no/unifacts/wp-json/wp/v2/posts/" + id + "?_embed";
 
 console.log(urlKeyId);
 
@@ -57,6 +58,7 @@ function clickImg(json) {
     img.onclick = function () {
       imgPopupBG.style.display = "flex";
       imgPopup.src = `${img.src})`;
+      console.log(img.src);
     };
   });
   imgPopupBG.onclick = function () {
