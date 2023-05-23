@@ -555,12 +555,12 @@ figure {
     background-color: red;
   }
   .h1Index {
-    margin-top: -2rem;
-    margin-bottom: 1.5rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
   }
 
   .h2Index {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     margin-left: -1rem;
     font-size: 1.1rem;
   }
@@ -608,7 +608,7 @@ figure {
   }
 }
 
-@media (orientation: landscape) and (min-width: 699px) and (max-width: 899px) {
+@media (min-width: 699px) and (max-width: 899px) {
   header {
     position: relative;
     background-color: rgb(60, 0, 255);
@@ -645,5 +645,23 @@ figure {
 
   .arrowRight {
     right: 1.5rem;
+  }
+}
+
+@media (max-width: 499px) {
+  header {
+    background-color: orange;
+  }
+
+  .h1Index {
+    margin-top: -5rem;
+    margin-bottom: 2rem;
+  }
+
+  .arrowLeft,
+  .arrowRight {
+    scale: 1;
+    margin-top: 20rem;
+    position: absolute;
   }
 }
