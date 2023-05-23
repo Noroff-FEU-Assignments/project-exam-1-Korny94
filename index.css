@@ -183,7 +183,6 @@ a {
   text-align: center;
   color: white;
   font-size: 1.8rem;
-  margin: 2rem 0 0 0;
 }
 
 .h2Index {
@@ -194,24 +193,26 @@ a {
   top: 6rem;
 }
 
+.carouselDivs {
+  display: flex;
+  flex-direction: row;
+}
+
 .arrowLeft {
-  position: absolute;
   transition-duration: 300ms;
   cursor: pointer;
   filter: invert(100%);
   left: 1rem;
-  top: 16rem;
   transform: scale(0.7);
   z-index: 1;
+  object-fit: contain;
 }
 .arrowRight {
   transform: scale(0.7);
-  position: absolute;
-  right: 1rem;
+  object-fit: contain;
   transition-duration: 300ms;
   cursor: pointer;
   filter: invert(100%);
-  top: 16rem;
   z-index: 1;
 }
 
@@ -557,8 +558,8 @@ figure {
   }
 
   .h1Index {
-    margin-top: 4rem;
-    margin-bottom: 2;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
   }
 
   .h2Index {
@@ -606,10 +607,11 @@ figure {
   .arrowLeft,
   .arrowRight {
     scale: 0.8;
-    margin-top: 15rem;
+    margin-top: 17rem;
+    position: absolute;
   }
 
-  .latestDivs {
-    margin-top: 3rem;
+  .arrowRight {
+    right: 0rem;
   }
 }
