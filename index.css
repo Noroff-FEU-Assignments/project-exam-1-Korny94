@@ -228,7 +228,7 @@ a {
   gap: 3rem;
   overflow-x: scroll;
   overflow-y: hidden;
-  width: 70vw;
+  width: 65vw;
   padding: 0 2rem 2rem 2rem;
   scroll-behavior: smooth;
 }
@@ -620,7 +620,7 @@ figure {
   }
 }
 
-@media (orientation: landscape) and (min-width: 599px) and (max-width: 899px) {
+@media (orientation: landscape) and (min-width: 699px) and (max-width: 899px) {
   .carouselDivs {
     margin-top: -0.7rem;
   }
