@@ -605,7 +605,7 @@ figure {
   }
 
   .latestDivs {
-    width: 60vw;
+    width: 70vw;
   }
 
   .arrowLeft,
@@ -661,6 +661,7 @@ figure {
   .arrowLeft,
   .arrowRight {
     margin-top: 0rem;
+    scale: 0.8;
     position: relative;
   }
 
