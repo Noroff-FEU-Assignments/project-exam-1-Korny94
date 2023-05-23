@@ -11,3 +11,8 @@ menu.onclick = function () {
     dropMenu.style.display = "none";
   }
 };
+
+dropMenu.onmouseleave = function () {
+  dropMenu.style.display = "none";
+  menuCount = 0;
+};
