@@ -650,9 +650,8 @@ figure {
   }
 
   .blogsDiv {
-    padding-left: 0rem;
     margin: auto;
-    width: 80vw;
+    width: 60vw;
   }
 
   .recentBlogs {
