@@ -649,6 +649,16 @@ figure {
     margin-top: 1rem;
   }
 
+  .blogsDiv {
+    padding-left: 0rem;
+    margin: auto;
+    width: 80vw;
+  }
+
+  .recentBlogs {
+    display: none;
+  }
+
   .blogsDivs {
     margin-top: 3rem;
   }
