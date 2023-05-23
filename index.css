@@ -611,3 +611,51 @@ figure {
     right: 0rem;
   }
 }
+
+@media (orientation: landscape) {
+  body {
+    background-color: red;
+  }
+
+  .carouselDivs {
+    margin-top: -0.7rem;
+  }
+
+  .dropMenu {
+    padding-top: 6.5rem;
+    gap: 0.5rem;
+  }
+
+  .dropMenu * {
+    font-size: 1.4rem;
+    padding-bottom: 0rem;
+  }
+
+  .dropMenu img {
+    width: 11%;
+  }
+
+  .h1Index {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    font-size: 1.5rem;
+  }
+
+  .latestCard {
+    height: 200px;
+  }
+
+  .latestImg {
+    height: 200px;
+  }
+
+  .latestTitle {
+    font-size: 1.3rem;
+  }
+
+  .arrowLeft,
+  .arrowRight {
+    margin-top: 0rem;
+    position: relative;
+  }
+}
