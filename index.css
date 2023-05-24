@@ -297,7 +297,7 @@ a {
 .blogTitle {
   text-align: center;
   font-size: clamp(25px, 2.5rem, 5vw);
-  margin: 8rem 1.5rem 1rem 1.5rem;
+  margin: 6.5rem 1.5rem 0.5rem 1.5rem;
 }
 
 .blogDiv {
@@ -640,8 +640,8 @@ figure {
   }
 
   .blogTitle {
-    margin-top: 2rem;
-    margin-bottom: 0rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .blogDiv {
