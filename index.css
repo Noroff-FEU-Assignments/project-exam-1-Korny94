@@ -417,10 +417,17 @@ figure {
   margin-top: 2.5rem;
 }
 
+.mainAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .aboutH1 {
-  margin-top: 6rem;
+  margin-top: 5rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .aboutUs {
@@ -435,7 +442,6 @@ figure {
 }
 
 .contactForm {
-  margin: auto;
   display: flex;
   flex-direction: column;
   width: 50vw;
@@ -662,8 +668,12 @@ figure {
     margin-top: 1rem;
   }
 
+  .mainAbout {
+    height: 100vh;
+  }
+
   .aboutH1 {
-    margin-top: 1rem;
+    margin-top: -6rem;
   }
 }
 
@@ -678,5 +688,9 @@ figure {
     scale: 1;
     margin-top: 20rem;
     position: absolute;
+  }
+
+  .aboutH1 {
+    margin-top: 8rem;
   }
 }
