@@ -188,11 +188,11 @@ a {
 }
 
 .h2Index {
-  left: 1rem;
+  left: 0rem;
   padding: 1rem;
   color: white;
   position: absolute;
-  top: 3.5rem;
+  top: 4rem;
 }
 
 .carouselDivs {
@@ -391,7 +391,7 @@ figure {
 }
 
 .blogsDivs {
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 
 .recentBlogs {
@@ -418,7 +418,7 @@ figure {
 }
 
 .aboutH1 {
-  margin-top: 8rem;
+  margin-top: 6rem;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -559,7 +559,6 @@ figure {
 
   .h2Index {
     margin-top: 1.5rem;
-    margin-left: -1rem;
     font-size: 1.1rem;
   }
 
@@ -645,10 +644,6 @@ figure {
     margin-bottom: 0rem;
   }
 
-  .blogsRecent {
-    margin-top: 1rem;
-  }
-
   .blogDiv {
     width: 80vw;
     margin: auto;
@@ -664,11 +659,11 @@ figure {
   }
 
   .blogsDivs {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 
   .aboutH1 {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 }
 
