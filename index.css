@@ -705,6 +705,11 @@ figure {
   .aboutH1 {
     margin-top: 0rem;
   }
+
+  .mainAbout {
+    padding-top: 2rem;
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 499px) {
