@@ -8,7 +8,7 @@ To put into practice the skills learned over your first year of studies.
 
 You have been tasked with creating a blog site. You can choose the design and topics covered on the blog, but it should have at least the following pages:
 
-- Home page ----------------IN PROGRESS???????????
+- Home page ----------------DONE!!!!!!!!!!!!!!!!!!
 - About page ---------------DONE!!!!!!!!!!!!!!!!!!
 - List of blog posts -------DONE!!!!!!!!!!!!!!!!!!
 - Blog post specific pages -DONE!!!!!!!!!!!!!!!!!!

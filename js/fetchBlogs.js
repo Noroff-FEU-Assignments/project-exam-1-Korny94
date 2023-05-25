@@ -26,20 +26,22 @@ async function fetchBlogs() {
       blogsDiv.innerHTML += `
                     <a href="/html/blog.html?id=${blogs.id}" class="blogDivs">
                         <h2>${blogs.title.rendered}</h2>
-                        <div class="blogsImgsContainer"><img class="blogsImgs" src="${blogs._embedded["wp:featuredmedia"][0].source_url}"/></div>
+                        <div class="blogsImgsContainer"><img class="blogsImgs" src="${blogs._embedded["wp:featuredmedia"][0].source_url}" alt="${blogs._embedded["wp:featuredmedia"][0].alt_text}"/></div>
                         
                     <hr>
                     </a>
                 `;
     });
 
-    for (let i = 0; i < 5; i++) {
-      recentBlogs.innerHTML += `
+    if ((recentBlogs.innerHTML = "<h1>Recent Posts</h1>")) {
+      for (let i = 0; i < 5; i++) {
+        recentBlogs.innerHTML += `
         <a href="/html/blog.html?id=${json[i].id}" class="blogDivs">
             <h2>${json[i].title.rendered}</h2>
         <hr>
         </a>
     `;
+      }
     }
 
     if (scrollToBottom) {

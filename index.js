@@ -16,16 +16,6 @@ menu.onclick = function () {
   }
 };
 
-// menu.onclick = function () {
-//   console.dir(dropMenu);
-//   menuCount++;
-//   if (menuCount % 2 == 1) {
-//     dropMenu.style.display = "flex";
-//   } else {
-//     dropMenu.style.display = "none";
-//   }
-// };
-
 main.onmouseup = function () {
   dropMenu.style.display = "none";
   if ((dropMenu.style.display = "none")) {

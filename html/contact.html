@@ -31,7 +31,10 @@
   <body>
     <header>
       <a class="logo" href="/index.html"
-        ><img class="logoImg" src="/images/logo/logoText.png" alt="logo"
+        ><img
+          class="logoImg"
+          src="/images/logo/logoText.png"
+          alt="Unifacts logo"
       /></a>
       <nav>
         <img
@@ -49,15 +52,17 @@
           alt="menu"
         />
         <div class="dropMenu" id="dropMenu">
-          <a href="/index.html"><img src="/images/icons/home.png" />Home</a>
+          <a href="/index.html"
+            ><img src="/images/icons/home.png" alt="Home" />Home</a
+          >
           <a href="/html/blogs.html"
-            ><img src="/images/icons/blog.png" />Blogs</a
+            ><img src="/images/icons/blog.png" alt="blogs" />Blogs</a
           >
           <a href="/html/about.html"
-            ><img src="/images/icons/about.png" />About</a
+            ><img src="/images/icons/about.png" alt="About us" />About</a
           >
           <a href="/html/contact.html"
-            ><img src="/images/icons/contact.png" />Contact</a
+            ><img src="/images/icons/contact.png" alt="Contact us" />Contact</a
           >
         </div>
       </nav>
@@ -71,28 +76,36 @@
           id="name"
           placeholder="Full name (required)"
         />
+        <label for="name"
+          >Please enter your full name (Min. 5 characters)</label
+        >
         <div class="formError" id="nameError">
           Please enter your full name (Min. 5 characters)
         </div>
         <input
+          label="email"
           class="email"
           name="email"
           id="email"
           placeholder="Email (required)"
         />
+        <label for="email">Please enter a valid email address</label>
         <div class="formError" id="emailError">
           Please enter a valid email address
         </div>
         <input
+          label="subject"
           class="subject"
           name="subject"
           id="subject"
           placeholder="Subject (required)"
         />
+        <label for="subject">Subject must be over 15 characters</label>
         <div class="formError" id="subjectError">
           Subject must be over 15 characters
         </div>
         <textarea
+          label="message"
           rows="5"
           class="message"
           type="text"
@@ -100,6 +113,7 @@
           id="message"
           placeholder="Message (required)"
         ></textarea>
+        <label for="message">Message must be over 25 characters</label>
         <div class="formError" id="messageError">
           Message must be over 25 characters
         </div>

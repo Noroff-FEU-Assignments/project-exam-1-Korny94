@@ -27,7 +27,7 @@ async function fetchBlogs() {
     json.forEach(function (carousel) {
       latestDivs.innerHTML += `
             <a href="/html/blog.html?id=${carousel.id}" class="latestCard">
-                <img class="latestImg" src="${carousel._embedded["wp:featuredmedia"][0].source_url}"/>
+                <img class="latestImg" src="${carousel._embedded["wp:featuredmedia"][0].source_url} "alt="${carousel._embedded["wp:featuredmedia"][0].alt_text}/>
                 <h3 class="latestTitle">${carousel.excerpt.rendered}</h3>
             </a>
         `;

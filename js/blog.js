@@ -57,8 +57,8 @@ function clickImg(json) {
   images.forEach(function (img) {
     img.onclick = function () {
       imgPopupBG.style.display = "flex";
-      imgPopup.src = `${img.src})`;
-      console.log(img.src);
+      imgPopup.src = `${img.src}`;
+      imgPopup.alt = `${img.alt}`;
     };
   });
   imgPopupBG.onclick = function () {
