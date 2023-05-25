@@ -129,12 +129,20 @@ function validMessage() {
   message.style.border = "1px solid green";
 }
 
+message.oninput = function () {
+  if (message.value.length > 25) {
+    validMessage();
+  } else {
+    messageError.style.opacity = "0";
+  }
+};
+
 submit.onclick = function (event) {
   event.preventDefault();
   if (fullName.value.length < 6) {
     invalidFullName();
   }
-  if (subject.value.length < 6) {
+  if (subject.value.length < 15) {
     invalidSubject();
   }
   if (!validateEmail(email.value)) {
@@ -155,13 +163,5 @@ submit.onclick = function (event) {
     validMessage();
   } else {
     invalidMessage();
-  }
-};
-
-message.oninput = function () {
-  if (message.value.length > 25) {
-    validMessage();
-  } else {
-    messageError.style.opacity = "0";
   }
 };
