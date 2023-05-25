@@ -702,12 +702,8 @@ figure {
     margin-top: 1rem;
   }
 
-  .mainAbout {
-    height: 100vh;
-  }
-
   .aboutH1 {
-    margin-top: -6rem;
+    margin-top: 0rem;
   }
 }
 
