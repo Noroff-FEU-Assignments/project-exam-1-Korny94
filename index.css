@@ -340,7 +340,7 @@ figure {
 .blogDiv img {
   object-fit: cover;
   transform: scale(1.05);
-  max-width: 100%;
+  max-width: 60vw;
   max-height: 300px;
   transition-duration: 500ms;
 }
