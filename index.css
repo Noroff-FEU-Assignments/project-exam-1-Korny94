@@ -224,6 +224,8 @@ a {
 }
 
 .latestDivs {
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
   scrollbar-width: none;
   z-index: 0;
   display: flex;
