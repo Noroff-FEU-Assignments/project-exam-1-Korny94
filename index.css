@@ -224,6 +224,7 @@ a {
 }
 
 .latestDivs {
+  scrollbar-width: none;
   z-index: 0;
   display: flex;
   gap: 3rem;
