@@ -405,11 +405,14 @@ figure {
 }
 
 .recentBlogs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   width: 25vw;
-  height: 80vh;
+  height: 85vh;
   position: fixed;
   right: -1rem;
-  margin-top: -1rem;
   border-left: 1px solid gray;
   z-index: 0;
   padding: 0rem 2rem 1rem 2rem;
