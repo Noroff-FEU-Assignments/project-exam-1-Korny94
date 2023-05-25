@@ -201,7 +201,7 @@ a {
   font-size: 1.3rem;
   left: 0rem;
   padding: 1rem;
-  color: rgba(255, 255, 255, 0.757);
+  color: rgba(255, 255, 255, 0.6);
   position: absolute;
   top: 4rem;
 }
@@ -595,6 +595,7 @@ figure {
   }
 
   .h2Index {
+    color: rgba(255, 255, 255, 0.6);
     margin-top: 1.5rem;
     font-size: 1.1rem;
   }
@@ -712,6 +713,10 @@ figure {
     padding-top: 2rem;
     justify-content: flex-start;
   }
+
+  .h2Index {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 @media (max-width: 499px) {
@@ -733,5 +738,11 @@ figure {
 
   .blogDiv {
     padding-right: 0px;
+  }
+
+  .h2Index {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
   }
 }
