@@ -239,10 +239,8 @@ a {
 .latestDivs::-webkit-scrollbar,
 .carouselDivs::-webkit-scrollbar {
   display: none;
-}
-
- {
-  display: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .latestCard {
