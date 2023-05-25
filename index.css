@@ -433,16 +433,21 @@ figure {
 }
 
 .recentBlogs {
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: fit-content;
-  height: 86vh;
+  height: 62vh;
+  max-height: 70rem;
   position: fixed;
   right: 0.5rem;
-  border-left: 1px solid gray;
+  bottom: 1rem;
+  border-radius: 8px;
+  background-color: rgba(189, 222, 255, 0.07);
+  box-shadow: 2px 2px 10px 0px rgba(63, 103, 111, 0.2);
   z-index: 0;
-  padding: 0rem 1.5rem 1rem 1.5rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
   overflow-y: scroll;
 }
 
@@ -534,7 +539,9 @@ textarea {
 }
 
 .alsoLike {
-  border: 1.5px solid gray;
+  background-color: rgba(189, 222, 255, 0.07);
+  box-shadow: 2px 2px 10px 0px rgba(63, 103, 111, 0.2);
+  border: none;
   max-height: 65vh;
   width: 270px;
   margin-top: 0.5rem;
