@@ -303,7 +303,8 @@ a {
 }
 
 .blogsDiv {
-  padding-left: 2rem;
+  margin: auto;
+  padding-right: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
