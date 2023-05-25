@@ -234,11 +234,14 @@ a {
   scroll-behavior: smooth;
 }
 
-.latestDivs::-webkit-scrollbar {
+.carousel::-webkit-scrollbar,
+.carouselDiv::-webkit-scrollbar,
+.latestDivs::-webkit-scrollbar,
+.carouselDivs::-webkit-scrollbar {
   display: none;
 }
 
-.carouselDivs::-webkit-scrollbar {
+ {
   display: none;
 }
 
