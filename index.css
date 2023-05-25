@@ -240,7 +240,7 @@ a {
 .carouselDivs::-webkit-scrollbar {
   display: none;
   overflow: hidden;
-  width: 0 !important;
+  scrollbar-width: none;
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
 }
