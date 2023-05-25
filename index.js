@@ -10,13 +10,9 @@ const blogsH1 = document.querySelector("#blogsH1");
 menu.onclick = function () {
   menuCount++;
   if (menuCount % 2 == 1) {
-    // blogsH1.style.marginLeft = "-250px";
     dropMenu.style.display = "flex";
-    blogsDiv1.style.paddingRight = "400px";
   } else {
-    // blogsH1.style.marginLeft = "0";
     dropMenu.style.display = "none";
-    blogsDiv1.style.paddingRight = "300px";
   }
 };
 
@@ -32,7 +28,6 @@ menu.onclick = function () {
 
 main.onmouseup = function () {
   dropMenu.style.display = "none";
-  blogsDiv1.style.paddingRight = "300px";
   if ((dropMenu.style.display = "none")) {
     menuCount = 0;
   }
