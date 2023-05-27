@@ -390,6 +390,10 @@ figure {
   background-color: rgb(255, 255, 255);
 }
 
+.viewMoreDiv {
+  padding-right: 300px;
+}
+
 .viewMore {
   margin-top: -1rem;
   text-align: center;
@@ -659,6 +663,10 @@ label {
     display: none;
   }
 
+  .viewMoreDiv {
+    padding-right: 0px;
+  }
+
   .blogsDiv {
     padding-left: 0rem;
     padding-right: 0px;
@@ -729,9 +737,12 @@ label {
     margin-bottom: 0.5rem;
   }
 
+  .viewMoreDiv {
+    padding-right: 0px;
+  }
+
   .blogDiv {
     padding-right: 0;
-
     width: 80vw;
     margin: auto;
   }
