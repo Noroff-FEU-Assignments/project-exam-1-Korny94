@@ -1,3 +1,5 @@
+const metaDescription = document.querySelector("#metaDescription");
+
 const blogDiv = document.querySelector("#blogDiv");
 
 const loadingDiv = document.querySelector("#loading");
