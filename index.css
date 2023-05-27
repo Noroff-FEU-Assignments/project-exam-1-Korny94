@@ -84,6 +84,14 @@ footer {
   scale: 1.2;
 }
 
+.active {
+  text-decoration: underline;
+}
+
+.hr {
+  width: 50%;
+}
+
 .logoImg {
   width: 150px;
   margin-left: 1rem;

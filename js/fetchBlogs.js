@@ -30,7 +30,7 @@ async function fetchBlogs() {
                         <h2>${blogs.title.rendered}</h2>
                         <div class="blogsImgsContainer"><img class="blogsImgs" src="${blogs._embedded["wp:featuredmedia"][0].source_url}" alt="${blogs._embedded["wp:featuredmedia"][0].alt_text}"/></div>
                         
-                    <hr>
+                    <hr class="hr">
                     </a>
                 `;
     });
