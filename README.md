@@ -1,71 +1,101 @@
-## Project Exam 1
+# project-exam-1-Korny94
 
-## Goal
+![image](https://raw.githubusercontent.com/Korny94/portfolio-karlMagnusNokling/main/img/screenshots/portfolio.PNG)
 
-To put into practice the skills learned over your first year of studies.
+## Description
 
-## Brief
+The purpose of my portfolio website project was to create a platform to showcase the projects I have developed during my first year of studying front-end development at Noroff. It serves as a digital portfolio where I can highlight my skills, expertise, and accomplishments as a front-end developer.
 
-You have been tasked with creating a blog site. You can choose the design and topics covered on the blog, but it should have at least the following pages:
+Project Details:
 
-- Home page ----------------DONE!!!!!!!!!!!!!!!!!!
-- About page ---------------DONE!!!!!!!!!!!!!!!!!!
-- List of blog posts -------DONE!!!!!!!!!!!!!!!!!!
-- Blog post specific pages -DONE!!!!!!!!!!!!!!!!!!
-- Contact page. ------------DONE!!!!!!!!!!!!!!!!!!
+- The website provides a comprehensive overview of my projects, highlighting their key features and functionalities.
 
-### Home Page
+- Each project is accompanied by a detailed description, explaining its purpose and technologies used.
 
-The home page should have a ‘Latest Posts’ section which uses a carousel (slider) for users to click to view more posts. For example, by default the user can see four posts, then they can click an arrow on the right to view the next four posts, and click it again to view the next four posts. The user can also click back to view results they had previously seen. This must be implemented for desktop at least, but if you want a simpler layout for mobile, you can change it from being in a carousel.
+- The portfolio website incorporates a clean and modern design, ensuring an engaging and user-friendly experience for visitors.
 
-### Blog Page DONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+- It is fully responsive and optimized for different devices, allowing seamless access and navigation across desktop, tablet, and mobile platforms.
 
-The blog posts page should show the first 10 blogs, and the user should click to view more results which then show underneath the first 10 blogs.
+- The website includes a dedicated "About Me" section, providing insights into my background, expertise, and passion for web development.
 
-### Blog Specific Page DONE!!!!!!!!!!!!!!!!!!!!!!!
+- Visitors can easily contact me through the provided contact page, enabling efficient communication for potential collaborations or inquiries.
 
-The content of the blog specific page should be dynamically built using a query string parameter based on whatever link the user clicked. The title of the blog specific page should change based on the blog that has been clicked on e.g. “My Blog | An Article I Wrote”.
+Project Goals:
 
-If images on the blog post page are clicked, a modal should appear giving the user a bigger view of that image. Clicking outside the image should hide the modal.
+- Showcase my proficiency in front-end technologies, including HTML, CSS, and JavaScript.
 
-### Contact page DONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+- Demonstrate my problem-solving skills and attention to detail in developing innovative solutions.
 
-Create a contact us page, there should be 4 textboxes on this page.
+- Create an attractive and visually appealing portfolio to leave a lasting impression on visitors.
 
-- Name (Should be more than 5 characters long)
-- Email address (Must be a valid email address)
-- Subject (Should be more than 15 characters long)
-- Message content (Should be more than 25 characters long)
+- Highlight my ongoing commitment to learning and professional growth, as indicated by my current enrollment in a front-end development program at Noroff.
 
-Please use JavaScript for validation, show error messages if the values in the textboxes do not meet the requirements.
+## Built With
 
-### WordPress DONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+- [Visual Studio Code](https://code.visualstudio.com/)
 
-The content for your website will be stored on a WordPress installation used as a Headless CMS. It’s important to note that we are only using WordPress to provide an API and add content for the blog. You should not submit a link to a WordPress site, but build your website using HTML, CSS and JavaScript and making a call to the WordPress REST API to fetch the data.
+## Getting Started
 
-The project has two aspects:
+### Installing
 
-- API from your WordPress installation
-- Your website built with HTML, CSS and JavaScript
+1. Clone the repo:
 
-You will need to add at least 12 blogs for your website. You can use lorem ipsum for paragraphs if you need, but headings, images etc. should all make sense.
+```bash
+git clone https://github.com/Korny94/portfolio-karlMagnusNokling
+```
 
-Note that this is an exam, and therefore tutor support will be limited as per the study plan.
+2. Open project in your preferred code editor
 
-## Level 1 Process
+3. Start customizing
 
-1. Decide on the theme for the blog you’re going to make
-2. Create a prototype of the website
-3. Install WordPress on your web host and add the blogs on the admin panel.
-4. Use the GitHub repo created by GitHub Classroom for your files and deploy to Netlify
-5. Build your website using HTML, CSS and JavaScript making a call to the WordPress REST API to fetch your data.
-6. Install Hotjar on your website.
-7. Ask users to test your website, and adjust based on their feedback and any insights from Hotjar.
-8. Write a report documenting your project (template provided in this repository).
-9. Submit your report as a PDF and a link to both your Netlify deployment and your GitHub repo.
+### Running
 
-## Level 2 Process (optional)
+To run the app, run the following commands:
 
-1. You can try adding a sort, filter, or search to the blog posts page allowing users to find the blog post more easily that they’re looking for.
-2. Post the data from the contact form to WordPress so you have the details saved.
-3. Allow users to submit comments on a blog post, and post this data to WordPress
+1. Open index.html in your preferred web browser.
+
+## Contributing
+
+Contributing
+
+Thank you for considering contributing to the project! Contributions are welcome and appreciated. To contribute, please follow these steps:
+
+1. Fork the repository on GitHub by clicking on the "Fork" button.
+
+2. Clone the forked repository to your local machine using Git and Visual Studio Code:
+
+```bash
+git clone https://github.com/YourUsername/your-project.git
+```
+
+3. Create a new branch for your changes:
+
+```bash
+git checkout -b my-feature
+```
+
+4. Make your desired changes to the project files using Visual Studio Code.
+
+5. Commit your changes with descriptive commit messages:
+
+```bash
+git commit -m "Add new feature"
+```
+
+6. Push your changes to your forked repository:
+
+```bash
+git push origin my-feature
+```
+
+7. Open a pull request on the original repository.
+
+8. Wait for the code review and address any feedback or suggestions.
+
+9. Once your pull request is approved, it will be merged into the main branch.
+
+## Contact
+
+Facebook: https://www.facebook.com/TheKorny
+
+Mail: karlmagnusnokling@hotmail.no
