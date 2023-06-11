@@ -22,7 +22,7 @@ Key Features
 
 ## Built With
 
-- [Visual Studio Code](https://code.visualstudio.com/)
+- [Visual Studio Code](https://code.visualstudio.com/) (HTML5, CSS & JavaScript)
 - [Wordpress](https://wordpress.com/)
 
 ## Getting Started
