@@ -1,38 +1,29 @@
 # project-exam-1-Korny94
 
-![image](https://raw.githubusercontent.com/Korny94/portfolio-karlMagnusNokling/main/img/screenshots/portfolio.PNG)
+![image](https://raw.githubusercontent.com/Noroff-FEU-Assignments/project-exam-1-Korny94/main/images/projectExam.PNG)
 
 ## Description
 
-The purpose of my portfolio website project was to create a platform to showcase the projects I have developed during my first year of studying front-end development at Noroff. It serves as a digital portfolio where I can highlight my skills, expertise, and accomplishments as a front-end developer.
+Unifacts is an immersive website that allows you to explore the universe through fascinating and fun space facts. Dive into the wonders of space and expand your knowledge about our vast universe.
 
-Project Details:
+Unifacts is a project created as part of my journey in front-end development, showcasing my skills in HTML, CSS, and JavaScript. It represents my passion for exploring innovative solutions and sharing knowledge in an accessible and enjoyable way.
 
-- The website provides a comprehensive overview of my projects, highlighting their key features and functionalities.
+Feel free to explore Unifacts and embark on a fascinating journey through the universe!
 
-- Each project is accompanied by a detailed description, explaining its purpose and technologies used.
+Key Features
 
-- The portfolio website incorporates a clean and modern design, ensuring an engaging and user-friendly experience for visitors.
+- Engaging Space Facts: Discover a vast collection of interesting space facts that cover various topics such as planets, stars, galaxies, and more. Expand your understanding of the cosmos with captivating information.
 
-- It is fully responsive and optimized for different devices, allowing seamless access and navigation across desktop, tablet, and mobile platforms.
+- Interactive Experience: Immerse yourself in a visually stunning and interactive environment that brings the wonders of space to life. Engage with captivating visuals and engaging animations that enhance your learning experience.
 
-- The website includes a dedicated "About Me" section, providing insights into my background, expertise, and passion for web development.
+- User-Friendly Interface: Navigate through the website effortlessly with a user-friendly interface designed to provide a seamless browsing experience. Find the information you seek with ease and enjoy a smooth interaction with the content.
 
-- Visitors can easily contact me through the provided contact page, enabling efficient communication for potential collaborations or inquiries.
-
-Project Goals:
-
-- Showcase my proficiency in front-end technologies, including HTML, CSS, and JavaScript.
-
-- Demonstrate my problem-solving skills and attention to detail in developing innovative solutions.
-
-- Create an attractive and visually appealing portfolio to leave a lasting impression on visitors.
-
-- Highlight my ongoing commitment to learning and professional growth, as indicated by my current enrollment in a front-end development program at Noroff.
+- Responsive Design: Whether you're accessing Unifacts on a desktop, tablet, or mobile device, the website is designed to adapt and provide an optimal viewing experience. Enjoy the same immersive experience and rich content across different devices.
 
 ## Built With
 
 - [Visual Studio Code](https://code.visualstudio.com/)
+- [Wordpress](https://wordpress.com/)
 
 ## Getting Started
 
@@ -41,7 +32,7 @@ Project Goals:
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/Korny94/portfolio-karlMagnusNokling
+git clone https://github.com/Noroff-FEU-Assignments/project-exam-1-Korny94
 ```
 
 2. Open project in your preferred code editor
@@ -65,7 +56,7 @@ Thank you for considering contributing to the project! Contributions are welcome
 2. Clone the forked repository to your local machine using Git and Visual Studio Code:
 
 ```bash
-git clone https://github.com/YourUsername/your-project.git
+git clone https://github.com/Noroff-FEU-Assignments/project-exam-1-Korny94
 ```
 
 3. Create a new branch for your changes:
