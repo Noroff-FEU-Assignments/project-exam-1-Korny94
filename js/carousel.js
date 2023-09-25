@@ -17,10 +17,7 @@ const api =
 
 async function fetchBlogs() {
   try {
-    const response = await fetch(api, {
-      method: "GET",
-      mode: "cors",
-    });
+    const response = await fetch(api);
     const json = await response.json();
 
     console.dir(json);
