@@ -13,7 +13,7 @@ arrowRight.onclick = function () {
 const blogsDiv = document.querySelector("#blogsDiv");
 const loading = document.querySelector("#loading");
 const api =
-  "https://karlmagnusnokling.no/unifacts/wp-json/wp/v2/posts?per_page=100&_embed";
+  "https://karlmagnusnokling.no/unifacts/unifacts.WordPress.2023-05-23.xml";
 
 async function fetchBlogs() {
   try {
