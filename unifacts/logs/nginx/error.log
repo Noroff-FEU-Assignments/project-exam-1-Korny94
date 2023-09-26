@@ -1,0 +1,4 @@
+2023/05/16 20:40:47 [error] 13188#12992: *19205 WSARecv() failed (10054: FormatMessage() error:(15100)) while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /wp-json/wp/v2/posts?per_page=12 HTTP/1.0", upstream: "fastcgi://127.0.0.1:10003", host: "unifacts.local", referrer: "http://127.0.0.1:5500/"
+2023/05/22 00:59:37 [error] 13188#12992: *25686 WSARecv() failed (10054: FormatMessage() error:(15105)) while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /wp-json/wp/v2/posts?per_page=12 HTTP/1.0", upstream: "fastcgi://127.0.0.1:10004", host: "unifacts.local", referrer: "http://127.0.0.1:5500/"
+2023/05/23 14:13:26 [alert] 19656#19660: OpenEvent("ngx_master_3340") failed (2: FormatMessage() error:(15100))
+2023/09/25 19:27:37 [alert] 22760#22764: OpenEvent("ngx_master_18252") failed (2: FormatMessage() error:(15100))
