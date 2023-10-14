@@ -17,7 +17,7 @@ const id = params.get("id");
 console.log(id);
 
 const urlKeyId =
-  "http://unifactsapi.local/wp-json/wp/v2/posts/" + id + "?_embed";
+  "https://unifactsapi.local/wp-json/wp/v2/posts/" + id + "?_embed";
 
 console.log(urlKeyId);
 
