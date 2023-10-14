@@ -1,69 +1,69 @@
-// const metaDescription = document.querySelector("#metaDescription");
+const metaDescription = document.querySelector("#metaDescription");
 
-// const blogDiv = document.querySelector("#blogDiv");
+const blogDiv = document.querySelector("#blogDiv");
 
-// const loadingDiv = document.querySelector("#loading");
+const loadingDiv = document.querySelector("#loading");
 
-// const blogTitle = document.querySelector("#blogTitle");
+const blogTitle = document.querySelector("#blogTitle");
 
-// const queryString = document.location.search;
+const queryString = document.location.search;
 
-// const params = new URLSearchParams(queryString);
+const params = new URLSearchParams(queryString);
 
-// const title = document.querySelector("title");
+const title = document.querySelector("title");
 
-// const id = params.get("id");
+const id = params.get("id");
 
-// console.log(id);
+console.log(id);
 
-// const urlKeyId =
-//   "https://karlmagnusnokling.no/unifacts/wp-json/wp/v2/posts/" + id + "?_embed";
+const urlKeyId =
+  "http://unifactsapi.local/wp-json/wp/v2/posts/" + id + "?_embed";
 
-// console.log(urlKeyId);
+console.log(urlKeyId);
 
-// async function fetchBlog() {
-//   try {
-//     const response = await fetch(urlKeyId);
-//     const json = await response.json();
+async function fetchBlog() {
+  try {
+    const response = await fetch(urlKeyId);
+    const json = await response.json();
 
-//     console.log(json);
+    console.log(json);
 
-//     loadingDiv.classList.remove("loading");
+    loadingDiv.classList.remove("loading");
 
-//     blogTitle.innerHTML = json.title.rendered;
-//     title.innerHTML = "UniFacts | " + json.title.rendered;
+    blogTitle.innerHTML = json.title.rendered;
+    title.innerHTML = "UniFacts | " + json.title.rendered;
 
-//     createBlogHtml(json);
-//     clickImg(json);
-//   } catch (err) {
-//     console.log(err);
-//     loadingDiv.classList.remove("loading");
-//     blogDiv.classList.add("error");
-//     blogDiv.innerHTML = "There was an error!";
-//   }
-// }
+    createBlogHtml(json);
+    clickImg(json);
+  } catch (err) {
+    console.log(err);
+    loadingDiv.classList.remove("loading");
+    blogDiv.classList.add("error");
+    blogDiv.innerHTML = "There was an error!";
+  }
+}
 
-// fetchBlog();
+fetchBlog();
 
-// function createBlogHtml(json) {
-//   blogDiv.innerHTML = `
-//         ${json.content.rendered}
-// `;
-// }
+function createBlogHtml(json) {
+  blogDiv.innerHTML = `
+        ${json.content.rendered}
+`;
+}
 
-// function clickImg(json) {
-//   const images = blogDiv.querySelectorAll("img");
-//   const imgPopupBG = document.querySelector("#imgPopupBG");
-//   const imgPopup = document.querySelector("#imgPopup");
+function clickImg(json) {
+  const images = blogDiv.querySelectorAll("img");
+  const imgPopupBG = document.querySelector("#imgPopupBG");
+  const imgPopup = document.querySelector("#imgPopup");
 
-//   images.forEach(function (img) {
-//     img.onclick = function () {
-//       imgPopupBG.style.display = "flex";
-//       imgPopup.src = `${img.src}`;
-//       imgPopup.alt = `${img.alt}`;
-//     };
-//   });
-//   imgPopupBG.onclick = function () {
-//     imgPopupBG.style.display = "none";
-//   };
-// }
+  images.forEach(function (img) {
+    img.onclick = function () {
+      imgPopupBG.style.display = "flex";
+      imgPopup.src = `${img.src}`;
+      imgPopup.alt = `${img.alt}`;
+    };
+  });
+  imgPopupBG.onclick = function () {
+    imgPopupBG.style.display = "none";
+  };
+}
