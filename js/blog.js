@@ -17,7 +17,7 @@ const id = params.get("id");
 console.log(id);
 
 const urlKeyId =
-  "https://karlmagnusnokling/unifacts/wp-json/wp/v2/posts/" + id + "?_embed";
+  "https://karlmagnusnokling.no/unifacts/wp-json/wp/v2/posts/" + id + "?_embed";
 
 console.log(urlKeyId);
 

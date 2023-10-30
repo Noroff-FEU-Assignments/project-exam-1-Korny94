@@ -4,7 +4,8 @@ const loading = document.querySelector("#loading");
 const viewMore = document.querySelector("#viewMore");
 const recentBlogs = document.querySelector("#recentBlogs");
 const alsoLike = document.querySelector("#alsoLike");
-const api = "https://karlmagnusnokling/unifacts/wp-json/wp/v2/posts?per_page=";
+const api =
+  "https://karlmagnusnokling.no/unifacts/wp-json/wp/v2/posts?per_page=";
 let per_page = "10";
 let viewMoreCount = 0;
 
