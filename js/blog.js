@@ -17,7 +17,7 @@ const id = params.get("id");
 console.log(id);
 
 const urlKeyId =
-  "https://karlmagnusnokling.no/unifacts/wp-json/wp/v2/posts/" + id + "?_embed";
+  "https://karlmagnusnokling.no/haley/wp-json/wp/v2/posts/" + id + "?_embed";
 
 console.log(urlKeyId);
 
@@ -27,14 +27,15 @@ async function fetchBlog() {
     const json = await response.json();
 
     console.log(json);
+    if (json.categories[0] == 26) {
+      loadingDiv.classList.remove("loading");
 
-    loadingDiv.classList.remove("loading");
+      blogTitle.innerHTML = json.title.rendered;
+      title.innerHTML = "UniFacts | " + json.title.rendered;
 
-    blogTitle.innerHTML = json.title.rendered;
-    title.innerHTML = "UniFacts | " + json.title.rendered;
-
-    createBlogHtml(json);
-    clickImg(json);
+      createBlogHtml(json);
+      clickImg(json);
+    }
   } catch (err) {
     console.log(err);
     loadingDiv.classList.remove("loading");
