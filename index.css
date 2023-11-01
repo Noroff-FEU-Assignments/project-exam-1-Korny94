@@ -92,11 +92,15 @@ footer {
   width: 50%;
 }
 
-.logo {
-  font-size: 1.5rem;
-  margin-left: 1rem;
+.logoText {
+  font-family: "Courier New", Courier, monospace;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 350;
   transition-duration: 300ms;
   text-decoration: none;
+  margin-left: 1.5rem;
 }
 
 .logo:hover {
