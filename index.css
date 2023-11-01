@@ -103,10 +103,6 @@ footer {
   margin-left: 1.5rem;
 }
 
-.logo:hover {
-  scale: 1.05;
-}
-
 .search {
   transform: scale(0.49);
   margin-right: -0.5rem;
