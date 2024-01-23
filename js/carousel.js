@@ -13,7 +13,7 @@ arrowRight.onclick = function () {
 const blogsDiv = document.querySelector("#blogsDiv");
 const loading = document.querySelector("#loading");
 const api =
-  "https://karlmagnusnokling.no/haley/wp-json/wp/v2/posts?per_page=100&_embed";
+  "https://karlmagnusnokling.no/haley/wp-json/wp/v2/posts?categories=26&per_page=100&_embed";
 
 async function fetchBlogs() {
   try {

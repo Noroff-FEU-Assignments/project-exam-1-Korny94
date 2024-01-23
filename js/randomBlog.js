@@ -1,6 +1,6 @@
 const randomBlog = document.querySelector("#randomBlog");
 const api1 =
-  "https://karlmagnusnokling.no/haley/wp-json/wp/v2/posts?per_page=12&_embed";
+  "https://karlmagnusnokling.no/haley/wp-json/wp/v2/posts?categories=26&per_page=12&_embed";
 
 async function randomBlogs() {
   try {

@@ -37,6 +37,7 @@ async function fetchBlog() {
       clickImg(json);
     }
   } catch (err) {
+    console.log("WADUUUP");
     console.log(err);
     loadingDiv.classList.remove("loading");
     blogDiv.classList.add("error");
