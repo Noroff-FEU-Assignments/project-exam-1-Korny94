@@ -14,6 +14,12 @@ const title = document.querySelector("title");
 
 const id = params.get("id");
 
+// const username = process.env.REACT_APP_USERNAME;
+// const password = process.env.REACT_APP_PASSWORD;
+
+const username = "haleyspappa";
+const password = "unifacts";
+
 console.log(id);
 
 const urlKeyId =
@@ -21,9 +27,39 @@ const urlKeyId =
 
 console.log(urlKeyId);
 
+// async function fetchBlog() {
+//   try {
+//     const response = await fetch(urlKeyId);
+//     const json = await response.json();
+
+//     console.log(json);
+//     if (json.categories[0] == 26) {
+//       loadingDiv.classList.remove("loading");
+
+//       blogTitle.innerHTML = json.title.rendered;
+//       title.innerHTML = "UniFacts | " + json.title.rendered;
+
+//       createBlogHtml(json);
+//       clickImg(json);
+//     }
+//   } catch (err) {
+//     console.log("WADUUUP");
+//     console.log(err);
+//     loadingDiv.classList.remove("loading");
+//     blogDiv.classList.add("error");
+//     blogDiv.innerHTML = "There was an error!";
+//   }
+// }
+
 async function fetchBlog() {
+  const credentials = btoa(`${username}:${password}`);
   try {
-    const response = await fetch(urlKeyId);
+    const response = await fetch(urlKeyId, {
+      headers: {
+        Authorization: `Basic ${credentials}`,
+      },
+    });
+
     const json = await response.json();
 
     console.log(json);
